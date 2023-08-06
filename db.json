@@ -1,0 +1,74 @@
+{
+  "products": [
+    { 
+      "id": 1, 
+      "title": "Máquina de Cortar Cabelo Wahl Balding", 
+      "description": "Máquina de Corte Profissional Balding, Wahl, 08110-055PA, Vermelha e Dourado." ,
+      "price":999.99,
+      "cover": "/src/assets/maquinabalding.jpg"
+    },
+    { 
+      "id": 2, 
+      "title": "Máquina de Cortar Cabelo Wahl Home Cut Basic", 
+      "description": "Máquina de Cortar Cabelo Wahl Home Cut Basic 9155 com 8 Pentes - Cinza/Azul.",
+      "price": 89.90,
+      "cover": "/src/assets/maquinahomecut.jpg"
+    },
+    { 
+      "id": 3, 
+      "title": "Cera Modeladora Brilho Alfalooks 120g", 
+      "description": "Encorpa e dá brilho aos fios, não deixa resíduos no cabelo e não resseca os fios.",
+      "price": 26.99,
+      "cover": "/src/assets/ceramodeladora.jpg"
+    },
+    { 
+      "id": 4, 
+      "title": "Pomada Modeladora Cabelo Urban Men Efeito Matte 50g", 
+      "description": "Pomada modeladora masculina para todos os tipos de cabelo. Farmaervas Urban Men Pomada Modeladora estiliza o penteado com flexibilidade e fixação forte, além de não agredir os fios.",
+      "price": 32.12,
+      "cover": "/src/assets/pomadamodeladora.jpg"
+    },
+    { 
+      "id": 5, 
+      "title": "Máquina de Acabamento Detailer - WAHL", 
+      "description": "O aparador de precisão favorito do seu barbeiro: Detailer. Essa ferramenta foi projetada para cortes extremamente rentes, criando linhas limpas e nítidas, detalhes e design para cortes bem acabados e ideal para o corte conhecido por freestyle ou hair tattoo. Está tudo nos detalhes com este aparador de barbeiro de precisão!",
+      "price": 539.91,
+      "cover": "/src/assets/maquinadetailer.jpg"
+    },
+    { 
+      "id": 6, 
+      "title": "Maquina De Acabamento Retrô Barba e Cabelo", 
+      "description": "T9 dragão Hair Trimmer tosquiadeira de cabelo elétrica cabeça óleo corte cabeça faca tubo cobre metal cheio impulso elétrico. Fácil de segurar na mão este será o único aparador que você vai precisar em seu arsenal.",
+      "price": 61.77,
+      "cover": "/src/assets/maquinaretro.jpg"
+    },
+    { 
+      "id": 7, 
+      "title": "Secador de Cabelo Taiff Potência 2100 Watts", 
+      "description": "A Taiff é uma marca com mais de 30 anos de sucesso consolidado pelo pioneirismo e pela produção de tecnologia. No Brasil, foi a primeira a lançar a tecnologia de íons negativos e também a primeira chapa.",
+      "price": 309.00,
+      "cover": "/src/assets/secador.jpg"
+    },
+    { 
+      "id": 8, 
+      "title": "Kit de tesoura de corte de cabelo", 
+      "description": "Tesouras são feitas de aço inoxidável de alta qualidade, que são duráveis ​​e incisivas. 2. A cor da tesoura é muito bonita e não desbota, requintada e prática. 3. O design ergonômico torna o corte de cabelo fácil, as linhas da tesoura se ajustam perfeitamente às mãos e você não se sentirá muito cansado após um longo tempo de uso. ",
+      "price": 103.00,
+      "cover": "/src/assets/kittesoura.jpg"
+    },
+    { 
+      "id": 9, 
+      "title": "Jogo de Capas Profissionais para corte de cabelo", 
+      "description": "capa de barbeiro preta gola elástica faixa se encaixa maioria tamanhos.tecido de tingimento de cabelo hairstylist.capa de estilista de cabelo e seca rapidamente.capa de corte de cabelo isso avental é feito de material macio e leve.",
+      "price": 86.99,
+      "cover": "/src/assets/jogocapacorte.jpg"
+    },
+    { 
+      "id": 10, 
+      "title": "Navalha Profissional Barbeiro Cabo De Madeira", 
+      "description": "NAVALHA INOX PROFISSIONAL CABO DE MADEIRA navalha é indicada para barbear, acabamento ou finalização de cortes.",
+      "price": 29.99,
+      "cover": "/src/assets/navalha.jpg"
+    }
+  ]
+}
