@@ -23,7 +23,7 @@
     },
     { 
       "id": 4, 
-      "title": "Pomada Modeladora Cabelo Urban Men Efeito Matte 50g", 
+      "title": "Pomada Modeladora para Cabelo Urban Men Efeito Matte 50g", 
       "description": "Pomada modeladora masculina para todos os tipos de cabelo. Farmaervas Urban Men Pomada Modeladora estiliza o penteado com flexibilidade e fixação forte, além de não agredir os fios.",
       "price": 32.12,
       "cover": "/src/assets/pomadamodeladora.jpg"
@@ -52,7 +52,7 @@
     { 
       "id": 8, 
       "title": "Kit de tesoura de corte de cabelo", 
-      "description": "Tesouras são feitas de aço inoxidável de alta qualidade, que são duráveis ​​e incisivas. 2. A cor da tesoura é muito bonita e não desbota, requintada e prática. 3. O design ergonômico torna o corte de cabelo fácil, as linhas da tesoura se ajustam perfeitamente às mãos e você não se sentirá muito cansado após um longo tempo de uso. ",
+      "description": "Tesouras são feitas de aço inoxidável de alta qualidade, que são duráveis ​​e incisivas. A cor da tesoura é muito bonita e não desbota, requintada e prática. O design ergonômico torna o corte de cabelo fácil, as linhas da tesoura se ajustam perfeitamente às mãos e você não se sentirá muito cansado após um longo tempo de uso. ",
       "price": 103.00,
       "cover": "/src/assets/kittesoura.jpg"
     },
@@ -66,7 +66,7 @@
     { 
       "id": 10, 
       "title": "Navalha Profissional Barbeiro Cabo De Madeira", 
-      "description": "NAVALHA INOX PROFISSIONAL CABO DE MADEIRA navalha é indicada para barbear, acabamento ou finalização de cortes.",
+      "description": "NAVALHA INOX PROFISSIONAL CABO DE MADEIRA é indicada para barbear, acabamento ou finalização de cortes.",
       "price": 29.99,
       "cover": "/src/assets/navalha.jpg"
     }

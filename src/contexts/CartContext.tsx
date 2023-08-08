@@ -6,6 +6,8 @@ interface ICartContextData{
   cart: ICartProps[];
   cartAmount: number; // Refere-se a quantidade de items no cart.
   addItemCart: (newItem: IProductProps) => void;
+  removeItemCart: (prduct: ICartProps) => void;
+  totalCart: string;
 }
 
 interface ICartProps{
@@ -26,8 +28,8 @@ export const CartContext = createContext({} as ICartContextData);
 
 function CartProvider({children}: ICartProviderProps){
   const [cart, setCart] = useState<ICartProps[]>([]);
+  const [totalCart, setTotalCart] = useState('');
 
-  // Adicionar item no cart.
   function addItemCart(newItem: IProductProps){
     // Verifica se o item é igual um item já existente no cart. (Se não é igual retorna -1).
     const indexItem = cart.findIndex(item => item.id === newItem.id);
@@ -39,6 +41,7 @@ function CartProvider({children}: ICartProviderProps){
       cartList[indexItem].total = cartList[indexItem].amount * cartList[indexItem].price;
 
       setCart(cartList);
+      totalResultCart(cartList);
       return;
     }
     // Se não existe um item igual, adiciona um novo item no cart.
@@ -48,7 +51,34 @@ function CartProvider({children}: ICartProviderProps){
       total: newItem.price
     }
     setCart(products => [...products, data]);
-  }
+    totalResultCart([...cart, data]);
+  };
+
+  function removeItemCart(product: ICartProps){
+    const indexItem = cart.findIndex(item => item.id === product.id);
+    // Aqui diminui 1 item do amount
+    if(cart[indexItem]?.amount > 1){
+      let cartList = cart;
+
+      cartList[indexItem].amount = cartList[indexItem].amount - 1;
+      cartList[indexItem].total = cartList[indexItem].total - cartList[indexItem].price;
+      setCart(cartList);
+      totalResultCart(cartList);
+      return;
+    }
+
+    const removeItem = cart.filter(item => item.id !== product.id);
+    setCart(removeItem);
+    totalResultCart(removeItem);
+  };
+
+  function totalResultCart(items: ICartProps[]){
+    let myCart = items;
+
+    let result = myCart.reduce((acc, obj) => {return acc + obj.total}, 0);
+    let resultFormated = result.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+    setTotalCart(resultFormated);
+  };
 
   return(
     <CartContext.Provider 
@@ -56,6 +86,8 @@ function CartProvider({children}: ICartProviderProps){
         cart, 
         cartAmount: cart.length,
         addItemCart, 
+        removeItemCart,
+        totalCart,
       }}
     >
       {children}

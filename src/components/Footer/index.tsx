@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export function Footer(){
   return(
-    <footer className='bg-gray-600 w-full h-40 flex items-center justify-center flex-col'>
+    <footer className='bg-gray-600 w-full h-40 mt-4 flex items-center justify-center flex-col'>
       <div className='flex gap-3'>
         <Link to={'https://www.facebook.com/'}>
           <FiFacebook size={20} color='#f1f5f9' />

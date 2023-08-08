@@ -1,8 +1,9 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import { CartContext } from "../../contexts/CartContext";
 import {FiShoppingCart, FiSearch} from 'react-icons/fi';
+import { IProductProps } from "../../pages/home";
 
 
 export function Header(){
@@ -16,7 +17,11 @@ export function Header(){
         </Link>
         <div className="flex items-center justify-center gap-5">
           <div className="flex items-center justify-center">
-            <input className="px-2 rounded-s" type="text" placeholder="Pesquise aqui..." />
+            <input 
+              className="px-2 rounded-s" 
+              type="search" 
+              placeholder="Pesquise aqui..."
+            />
             <button className="bg-green-400 flex items-center justify-center gap-1 px-2 text-gray-600 font-medium rounded-e">
               Buscar
               <FiSearch size={18} color='#555' />
