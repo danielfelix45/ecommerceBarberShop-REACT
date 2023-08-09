@@ -67,6 +67,7 @@ function CartProvider({children}: ICartProviderProps){
       return;
     }
 
+    // O filter percorre o array e devolve o array com todos os items, menos o que vc clicou.
     const removeItem = cart.filter(item => item.id !== product.id);
     setCart(removeItem);
     totalResultCart(removeItem);

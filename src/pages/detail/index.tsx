@@ -38,7 +38,7 @@ export function ProductDetail(){
     <>
       <main className='w-full max-w-7xl px-4 mx-auto my-6 min-h-screen'>
         {product && (
-          <section className='w-full'>
+          <section key={product.id} className='w-full'>
             <div className='flex flex-col lg:flex-row'>
               <img
                 className='flex-1 w-full max-h-72 object-contain' 

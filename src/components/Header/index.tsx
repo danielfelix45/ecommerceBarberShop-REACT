@@ -1,9 +1,8 @@
-import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 import { CartContext } from "../../contexts/CartContext";
 import {FiShoppingCart, FiSearch} from 'react-icons/fi';
-import { IProductProps } from "../../pages/home";
 
 
 export function Header(){
