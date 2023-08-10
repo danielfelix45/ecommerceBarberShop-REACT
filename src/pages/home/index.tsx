@@ -52,7 +52,7 @@ export function Home(){
                   src={product.cover} 
                   alt={product.title} 
                 />
-                <p className='font-medium mt-1 mb-2'>{product.title}</p>
+                <p className='font-medium mt-1 mb-2 hover:underline'>{product.title}</p>
               </Link>
 
               <div className='flex gap-3 items-center'>
